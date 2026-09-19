@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEEPAK TAXIN | GST • ITR • TDS Services</title>
+<meta name="description" content="DEEPAK TAXIN provides convenient online GST, ITR, TDS, accounting and bookkeeping support.">
+<style>
+:root{--navy:#0b1f3a;--blue:#155eef;--green:#0b8f55;--light:#f5f8fc;--text:#172033;--muted:#667085;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{max-width:1120px;margin:auto;padding:0 22px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #e8edf4;backdrop-filter:blur(8px)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:.6px;font-size:21px;color:var(--navy)}
+.logo span{color:var(--green)}
+nav{display:flex;gap:25px;font-size:14px;font-weight:700;color:#344054}
+nav a:hover{color:var(--blue)}
+.menu{display:none;background:none;border:0;font-size:25px}
+.hero{background:linear-gradient(135deg,#eef5ff 0%,#ffffff 60%,#eaf2ff 100%);padding:88px 0 76px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:#e8f1ff;color:#155eef;font-weight:800;font-size:12px;margin-bottom:18px}
+h1{font-size:52px;line-height:1.08;color:var(--navy);margin-bottom:20px}
+h1 span{color:var(--green)}
+.hero p{font-size:18px;color:var(--muted);max-width:650px;margin-bottom:28px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:800;font-size:14px;border:1px solid transparent}
+.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:#0f4ed4}
+.btn-outline{border-color:#cbd5e1;color:var(--navy);background:#fff}
+.hero-card{background:#fff;border:1px solid #e3eaf2;border-radius:22px;padding:28px;box-shadow:0 20px 55px rgba(11,31,58,.10)}
+.hero-card h3{font-size:22px;color:var(--navy);margin-bottom:18px}
+.check{display:flex;gap:10px;margin:14px 0;color:#344054;font-weight:600}
+.check b{color:var(--green)}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 40px}
+.section-head h2{font-size:36px;color:var(--navy);margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:25px;background:#fff;border:1px solid #e4eaf2;border-radius:16px;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(16,24,40,.08)}
+.icon{width:46px;height:46px;border-radius:12px;background:#edf4ff;color:var(--blue);display:grid;place-items:center;font-size:21px;font-weight:900;margin-bottom:15px}
+.card h3{font-size:18px;color:var(--navy);margin-bottom:7px}.card p{color:var(--muted);font-size:14px}
+.alt{background:#f3f7ff}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about h2{font-size:36px;color:var(--navy);line-height:1.15;margin-bottom:16px}
+.about p{color:var(--muted);margin-bottom:15px}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.point{padding:14px;background:#fff;border-radius:12px;border:1px solid #e6ebf2;font-weight:700;font-size:14px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.price{border:1px solid #e2e8f0;border-radius:17px;padding:25px;background:#fff}
+.price.featured{border:2px solid var(--blue);box-shadow:0 15px 35px rgba(21,94,239,.10)}
+.price h3{color:var(--navy);margin-bottom:8px}.price .amount{font-size:28px;font-weight:900;color:var(--green);margin:8px 0 16px}.price ul{list-style:none;color:var(--muted);font-size:14px}.price li{margin:9px 0}.price li:before{content:"✓";color:var(--green);font-weight:900;margin-right:8px}
+.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid #e4e7ec;padding:18px 0}.faq summary{cursor:pointer;font-weight:800;color:var(--navy)}.faq p{color:var(--muted);padding-top:10px}
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px}.contact-box{background:var(--navy);color:#fff;border-radius:20px;padding:32px}.contact-box p{color:#c8d2e1;margin:10px 0 22px}.contact-item{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+form{border:1px solid #e1e7ef;border-radius:20px;padding:28px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:13px;font-weight:800;color:#344054;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 13px;border:1px solid #d0d5dd;border-radius:9px;font:inherit;margin-bottom:15px}
+textarea{min-height:120px;resize:vertical}
+footer{background:#07172c;color:#c7d1df;padding:35px 0}.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{color:#fff;font-weight:900;font-size:18px}
+.disclaimer{font-size:12px;color:#98a7bb;margin-top:18px;max-width:900px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#18a957;color:#fff;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;font-weight:900;box-shadow:0 10px 25px rgba(0,0,0,.2);z-index:30}
+@media(max-width:800px){nav{display:none}.menu{display:block}.hero-grid,.about,.contact{grid-template-columns:1fr}.grid,.pricing{grid-template-columns:1fr 1fr}h1{font-size:40px}.hero{padding-top:55px}}
+@media(max-width:560px){.grid,.pricing,.row,.points{grid-template-columns:1fr}section{padding:58px 0}.section-head h2,.about h2{font-size:29px}.hero p{font-size:16px}.nav{height:64px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="#home">DEEPAK <span>TAXIN</span></a>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+<button class="menu" onclick="alert('Use the section links above or scroll down to explore the website.')">☰</button>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="badge">ONLINE TAX & ACCOUNTING SERVICES</div>
+<h1>Simple, Reliable <span>Tax Services</span> for Your Business</h1>
+<p>Get convenient online support for GST, ITR, TDS, accounting and bookkeeping through DEEPAK TAXIN.</p>
+<div class="buttons"><a class="btn btn-primary" href="#contact">Get Started</a><a class="btn btn-outline" href="#services">View Services</a></div>
+</div>
+<div class="hero-card">
+<h3>What we help with</h3>
+<div class="check"><b>✓</b> GST registration & return support</div>
+<div class="check"><b>✓</b> Income Tax Return filing support</div>
+<div class="check"><b>✓</b> TDS return support</div>
+<div class="check"><b>✓</b> Bookkeeping & Tally support</div>
+<div class="check"><b>✓</b> Online documentation assistance</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-head"><h2>Our Services</h2><p>Practical online support for individuals, small businesses and growing enterprises.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">GST</div><h3>GST Services</h3><p>GST registration, return filing support, amendments and cancellation assistance.</p></div>
+<div class="card"><div class="icon">ITR</div><h3>Income Tax</h3><p>Online ITR preparation and filing support based on the documents you provide.</p></div>
+<div class="card"><div class="icon">TDS</div><h3>TDS Services</h3><p>TDS return preparation, documentation and compliance support.</p></div>
+<div class="card"><div class="icon">₹</div><h3>Accounting</h3><p>Basic accounting, transaction records, reconciliation and bookkeeping support.</p></div>
+<div class="card"><div class="icon">T</div><h3>Tally Support</h3><p>Tally data entry, ledger maintenance and routine accounting assistance.</p></div>
+<div class="card"><div class="icon">DOC</div><h3>Online Documentation</h3><p>Assistance with digital documentation and business-related online processes.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about" class="alt">
+<div class="container about">
+<div>
+<h2>Professional support, delivered online.</h2>
+<p>DEEPAK TAXIN is an online service brand focused on making routine tax and accounting processes easier for clients.</p>
+<p>Our approach is simple: understand your requirement, collect the required documents, prepare the work carefully and keep you informed about the process.</p>
+<div class="points"><div class="point">✓ Online-first service</div><div class="point">✓ Clear communication</div><div class="point">✓ Document-focused process</div><div class="point">✓ Small-business friendly</div></div>
+</div>
+<div class="hero-card">
+<h3>How it works</h3>
+<div class="check"><b>1.</b> Send your requirement</div>
+<div class="check"><b>2.</b> Share required documents</div>
+<div class="check"><b>3.</b> We prepare/process the service</div>
+<div class="check"><b>4.</b> Receive confirmation and records</div>
+</div>
+</div>
+</section>
+
+<section id="pricing">
+<div class="container">
+<div class="section-head"><h2>Simple Pricing</h2><p>Transparent service pricing. For complex or non-standard cases, the final fee will be confirmed before work begins.</p></div>
+<div class="pricing">
+<div class="price"><h3>GST Registration</h3><div class="amount">₹999</div><ul><li>GST registration support</li><li>Basic documentation</li><li>Online assistance</li></ul><a class="btn btn-outline" href="https://wa.me/917676035984?text=Hi%20DEEPAK%20TAXIN,%20I%20need%20GST%20Registration%20service.">WhatsApp</a></div>
+<div class="price"><h3>Nil GST Return</h3><div class="amount">₹500</div><ul><li>Nil GST return support</li><li>Online assistance</li><li>Filing confirmation</li></ul><a class="btn btn-outline" href="https://wa.me/917676035984?text=Hi%20DEEPAK%20TAXIN,%20I%20need%20Nil%20GST%20Return%20service.">WhatsApp</a></div>
+<div class="price featured"><h3>GST Return</h3><div class="amount">₹699</div><ul><li>GST return support</li><li>Document review</li><li>Online filing support</li></ul><a class="btn btn-primary" href="https://wa.me/917676035984?text=Hi%20DEEPAK%20TAXIN,%20I%20need%20GST%20Return%20service.">WhatsApp</a></div>
+<div class="price"><h3>Nil ITR Filing</h3><div class="amount">₹499</div><ul><li>Nil ITR filing support</li><li>Document review</li><li>Online filing support</li></ul><a class="btn btn-outline" href="https://wa.me/917676035984?text=Hi%20DEEPAK%20TAXIN,%20I%20need%20Nil%20ITR%20Filing%20service.">WhatsApp</a></div>
+<div class="price"><h3>TDS Return</h3><div class="amount">₹999 / %</div><ul><li>TDS return preparation</li><li>Basic compliance support</li><li>Online assistance</li></ul><a class="btn btn-outline" href="https://wa.me/917676035984?text=Hi%20DEEPAK%20TAXIN,%20I%20need%20TDS%20Return%20service.">WhatsApp</a></div>
+<div class="price"><h3>Monthly Bookkeeping</h3><div class="amount">₹2999</div><ul><li>Monthly bookkeeping</li><li>Tally/accounting support</li><li>Online assistance</li></ul><a class="btn btn-outline" href="https://wa.me/917676035984?text=Hi%20DEEPAK%20TAXIN,%20I%20need%20Monthly%20Bookkeeping%20service.">WhatsApp</a></div>
+</div></div>
+</div>
+</section>
+
+<section id="faq" class="alt">
+<div class="container">
+<div class="section-head"><h2>Frequently Asked Questions</h2></div>
+<div class="faq">
+<details><summary>Do you provide services completely online?</summary><p>Yes. DEEPAK TAXIN is designed as an online-first service. Documents and communication can be handled digitally.</p></details>
+<details><summary>What documents do I need?</summary><p>It depends on the service. You will be told which documents are required after your enquiry.</p></details>
+<details><summary>Are you a CA firm?</summary><p>DEEPAK TAXIN is an online tax-service brand and is not presented as a CA firm. Where a service legally requires a Chartered Accountant or another authorized professional, the appropriate professional should be involved.</p></details>
+<details><summary>How can I request a service?</summary><p>Use the enquiry form below or contact DEEPAK TAXIN through the communication channel you publish on the website.</p></details>
+</div>
+</div>
+</section>
+
+<section id="payment" class="alt">
+<div class="container">
+<div class="section-head"><h2>Online Payment</h2><p>Pay securely using your preferred UPI payment method.</p></div>
+<div class="hero-card" style="max-width:620px;margin:auto;text-align:center">
+<h3>DEEPAK TAXIN Payment</h3>
+<p style="color:#667085;margin-bottom:18px">Replace the button link below with your actual UPI payment link before publishing.</p>
+<a class="btn btn-primary" href="upi://pay?pa=YOUR-UPI-ID&pn=DEEPAK%20TAXIN" onclick="return confirm('Your UPI app will open. Make sure your UPI ID is configured in the website before publishing.')">Pay via UPI</a>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-head"><h2>Let's Get Started</h2><p>Tell us what service you need and we can discuss the next steps.</p></div>
+<div class="contact">
+<div class="contact-box">
+<h2>DEEPAK TAXIN</h2>
+<p>Online GST • ITR • TDS • Accounting Support</p>
+<div class="contact-item"><strong>WhatsApp</strong><br><a href="https://wa.me/917676035984">+91 76760 35984 — Chat Now</a></div>
+<div class="contact-item"><strong>Phone</strong><br>+91 76760 35984<br>+91 99381 10965</div>
+<div class="contact-item"><strong>Email</strong><br><a href="mailto:deepaktaxin@gmail.com">deepaktaxin@gmail.com</a></div>
+<div class="contact-item"><strong>Instagram</strong><br><a href="https://www.instagram.com/deepaktaxin/">@deepaktaxin</a></div>
+<div style="margin-top:22px"><a class="btn btn-primary" href="#payment">Make a Payment</a></div>
+</div>
+<form onsubmit="submitForm(event)">
+<div class="row"><div><label>Name</label><input id="name" required></div><div><label>Phone</label><input id="phone" required></div></div>
+<label>Service</label><select id="service"><option>GST Services</option><option>ITR Filing Support</option><option>TDS Services</option><option>Accounting / Tally</option><option>Other</option></select>
+<label>Message</label><textarea id="message" placeholder="Tell us what you need..."></textarea>
+<button class="btn btn-primary" type="submit">Send Enquiry</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-grid"><div class="footer-brand">DEEPAK TAXIN</div><div>© 2026 DEEPAK TAXIN. All rights reserved.</div></div>
+<div class="container disclaimer">Disclaimer: Services and fees should be described accurately and updated according to your actual qualifications, registrations and scope of work. This website does not by itself constitute professional legal or tax advice.</div>
+</footer>
+<a class="whatsapp" href="https://wa.me/917676035984?text=Hi%20DEEPAK%20TAXIN,%20I%20would%20like%20to%20enquire%20about%20your%20services." aria-label="WhatsApp">WA</a>
+
+<script>
+function submitForm(e){
+ e.preventDefault();
+ const n=document.getElementById('name').value;
+ const phone=document.getElementById('phone').value;
+ const service=document.getElementById('service').value;
+ const m=document.getElementById('message').value;
+ const text=`Hi DEEPAK TAXIN, my name is ${n}. Phone: ${phone}. I need: ${service}. Message: ${m}`;
+ window.open('https://wa.me/917676035984?text='+encodeURIComponent(text),'_blank');
+}
+</script>
+</body>
+</html>
